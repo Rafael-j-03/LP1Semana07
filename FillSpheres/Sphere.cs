@@ -19,5 +19,11 @@ namespace FillSpheres
             this.radius = radius;
             this.throwCount = 0;
         }
+
+        // Pop method
+        public void Pop()
+        {
+            this.radius = 0;
+        }
     }
 }
