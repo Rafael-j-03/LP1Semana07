@@ -20,5 +20,14 @@ namespace FillSpheres
             this.blue = blue;
             this.alpha = alpha;
         }
+
+        // Constructor putting alpha to 255
+        public Color(byte red, byte green, byte blue)
+        {
+            this.red = red;
+            this.green = green;
+            this.blue = blue;
+            this.alpha = 255;
+        }
     }
 }
