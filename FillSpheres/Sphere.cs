@@ -40,5 +40,17 @@ namespace FillSpheres
         {
             return this.throwCount;
         }
+
+        // Get color
+        public Color GetColor()
+        {
+            return this.color;
+        }
+
+        // Get radius
+        public float GetRadius()
+        {
+            return this.radius;
+        }
     }
 }

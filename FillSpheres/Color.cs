@@ -31,19 +31,19 @@ namespace FillSpheres
         }
 
         // Getters
-        public byte Red()
+        public byte GetRed()
         {
             return red;
         }
-        public byte Green()
+        public byte GetGreen()
         {
             return green;
         }
-        public byte Blue()
+        public byte GetBlue()
         {
             return blue;
         }
-        public byte Alpha()
+        public byte GetAlpha()
         {
             return alpha;
         }
@@ -67,7 +67,7 @@ namespace FillSpheres
         }
 
         // Get grey value
-        public byte  GetGrey()
+        public byte GetGrey()
         {
             return (byte)((red + green + blue) / 3);
         }
