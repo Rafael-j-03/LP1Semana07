@@ -65,5 +65,11 @@ namespace FillSpheres
         {
             this.alpha = alpha;
         }
+
+        // Get grey value
+        public byte  GetGrey()
+        {
+            return (byte)((red + green + blue) / 3);
+        }
     }
 }
