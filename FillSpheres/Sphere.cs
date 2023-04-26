@@ -34,5 +34,11 @@ namespace FillSpheres
                 this.throwCount++;
             }
         }
+
+        // Get throw count
+        public int GetThrowCount()
+        {
+            return this.throwCount;
+        }
     }
 }
