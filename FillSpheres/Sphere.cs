@@ -25,5 +25,14 @@ namespace FillSpheres
         {
             this.radius = 0;
         }
+
+        // Throw method
+        public void Throw()
+        {
+            if (this.radius > 0)
+            {
+                this.throwCount++;
+            }
+        }
     }
 }
