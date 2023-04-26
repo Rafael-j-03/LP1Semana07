@@ -11,5 +11,13 @@ namespace FillSpheres
         private Color color;
         private float radius;
         private int throwCount;
+
+        // Constructor
+        public Sphere(Color color, float radius)
+        {
+            this.color = color;
+            this.radius = radius;
+            this.throwCount = 0;
+        }
     }
 }
