@@ -8,49 +8,28 @@ namespace BetterFillSpheres
     public class Sphere
     {
         //Color
-        private readonly Color color;
-        private float radius;
         private int throwCount;
 
-        // Constructor
-        public Sphere(Color color, float radius)
-        {
-            this.color = color;
-            this.radius = radius;
-            this.throwCount = 0;
-        }
+        // Getters and setters
+        public Color Color { get ; set ;}
+        public float Radius { get ; set ;}
 
         // Pop method
         public void Pop()
         {
-            this.radius = 0;
+            Radius = 0;
         }
 
         // Throw method
         public void Throw()
         {
-            if (this.radius > 0)
+            if (Radius > 0)
             {
-                this.throwCount++;
+                throwCount++;
             }
         }
 
         // Get throw count
-        public int GetTimesThrown()
-        {
-            return this.throwCount;
-        }
-
-        // Get color
-        public Color GetColor()
-        {
-            return this.color;
-        }
-
-        // Get radius
-        public float GetRadius()
-        {
-            return this.radius;
-        }
+        public int GetTimesThrown { get => throwCount; }
     }
 }

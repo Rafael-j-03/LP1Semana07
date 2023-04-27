@@ -7,8 +7,10 @@ namespace BetterFillSpheres
         static void Main(string[] args)
         {
             // Create 2 spheres
-            Sphere sphere1 = new Sphere(new Color(255, 0, 0), 1);
-            Sphere sphere2 = new Sphere(new Color(0, 255, 0), 1);
+            Sphere sphere1 = new Sphere{Color = new Color{Red = 255, Green = 0, 
+                             Blue = 0, Alpha = 50}, Radius = 10};
+            Sphere sphere2 = new Sphere{Color = new Color{Red = 0, Green = 255,
+                             Blue = 0}, Radius = 20};
 
             // Throw them
             sphere1.Throw();
@@ -17,16 +19,27 @@ namespace BetterFillSpheres
             // Pop them
             sphere1.Pop();
 
-            // Print state including color
-            Console.WriteLine("Sphere 1: radius = " + sphere1.GetRadius() + 
-            ", throw count = " + sphere1.GetTimesThrown() + ", color = " + 
-            sphere1.GetColor().Red + ", " + sphere1.GetColor().Green + 
-            ", " + sphere1.GetColor().Blue + ", " + sphere1.GetColor().Alpha);
+            // Print their state to the console
+            Console.WriteLine("Sphere 1 color: " + sphere1.Color.Red + ", " + 
+                              sphere1.Color.Green + ", " + sphere1.Color.Blue + 
+                              ", " + sphere1.Color.Alpha + " | Sphere 1 radius: " +
+                              sphere1.Radius + " | Sphere 1 times thrown: " +
+                              sphere1.GetTimesThrown);
+            Console.WriteLine("Sphere 2 color: " + sphere2.Color.Red + ", " +
+                              sphere2.Color.Green + ", " + sphere2.Color.Blue +
+                              ", " + sphere2.Color.Alpha + " | Sphere 2 radius: " +
+                              sphere2.Radius + " | Sphere 2 times thrown: " +
+                              sphere2.GetTimesThrown);
 
-            Console.WriteLine("Sphere 2: radius = " + sphere2.GetRadius() +
-            ", throw count = " + sphere2.GetTimesThrown() + ", color = " +
-            sphere2.GetColor().Red + ", " + sphere2.GetColor().Green +
-            ", " + sphere2.GetColor().Blue + ", " + sphere2.GetColor().Alpha);
+            // Change color from sphere 1
+            sphere1.Color = new Color{Red = 0, Green = 0, Blue = 255, Alpha = 255};
+
+            // Print their state to the console
+            Console.WriteLine("Sphere 1 color: " + sphere1.Color.Red + ", " + 
+                              sphere1.Color.Green + ", " + sphere1.Color.Blue + 
+                              ", " + sphere1.Color.Alpha + " | Sphere 1 radius: " +
+                              sphere1.Radius + " | Sphere 1 times thrown: " +
+                              sphere1.GetTimesThrown);
         }
     }
 }
