@@ -36,7 +36,7 @@ namespace BetterFillSpheres
         }
 
         // Get throw count
-        public int GetThrowCount()
+        public int GetTimesThrown()
         {
             return this.throwCount;
         }

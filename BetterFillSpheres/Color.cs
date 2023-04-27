@@ -7,69 +7,31 @@ namespace BetterFillSpheres
 {
     public class Color 
     {
-        private byte red;
-        private byte green;
-        private byte blue;
-        private byte alpha;
-
         // Constructor
         public Color(byte red, byte green, byte blue, byte alpha)
         {
-            this.red = red;
-            this.green = green;
-            this.blue = blue;
-            this.alpha = alpha;
+            this.Red = red;
+            this.Green = green;
+            this.Blue = blue;
+            this.Alpha = alpha;
         }
-
-        // Constructor putting alpha to 255
+        
+        // Constructor
         public Color(byte red, byte green, byte blue)
         {
-            this.red = red;
-            this.green = green;
-            this.blue = blue;
-            this.alpha = 255;
+            this.Red = red;
+            this.Green = green;
+            this.Blue = blue;
+            this.Alpha = 255;
         }
 
-        // Getters
-        public byte GetRed()
-        {
-            return red;
-        }
-        public byte GetGreen()
-        {
-            return green;
-        }
-        public byte GetBlue()
-        {
-            return blue;
-        }
-        public byte GetAlpha()
-        {
-            return alpha;
-        }
-
-        // Setters
-        public void SetRed(byte red)
-        {
-            this.red = red;
-        }
-        public void SetGreen(byte green)
-        {
-            this.green = green;
-        }
-        public void SetBlue(byte blue)
-        {
-            this.blue = blue;
-        }
-        public void SetAlpha(byte alpha)
-        {
-            this.alpha = alpha;
-        }
+        // Getters and setters
+        public byte Red { get; set ; }
+        public byte Green { get; set ; }
+        public byte Blue { get; set ; }
+        public byte Alpha { get; set ; }
 
         // Get grey value
-        public byte GetGrey()
-        {
-            return (byte)((red + green + blue) / 3);
-        }
+        public byte GetGrey { get => (byte)((Red + Green + Blue) / 3); }
     }
 }

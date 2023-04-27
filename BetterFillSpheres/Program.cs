@@ -19,14 +19,14 @@ namespace BetterFillSpheres
 
             // Print state including color
             Console.WriteLine("Sphere 1: radius = " + sphere1.GetRadius() + 
-            ", throw count = " + sphere1.GetThrowCount() + ", color = " + 
-            sphere1.GetColor().GetRed() + ", " + sphere1.GetColor().GetGreen() + 
-            ", " + sphere1.GetColor().GetBlue());
+            ", throw count = " + sphere1.GetTimesThrown() + ", color = " + 
+            sphere1.GetColor().Red + ", " + sphere1.GetColor().Green + 
+            ", " + sphere1.GetColor().Blue + ", " + sphere1.GetColor().Alpha);
 
             Console.WriteLine("Sphere 2: radius = " + sphere2.GetRadius() +
-            ", throw count = " + sphere2.GetThrowCount() + ", color = " +
-            sphere2.GetColor().GetRed() + ", " + sphere2.GetColor().GetGreen() +
-            ", " + sphere2.GetColor().GetBlue());
+            ", throw count = " + sphere2.GetTimesThrown() + ", color = " +
+            sphere2.GetColor().Red + ", " + sphere2.GetColor().Green +
+            ", " + sphere2.GetColor().Blue + ", " + sphere2.GetColor().Alpha);
         }
     }
 }
