@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FillSpheres
+namespace BetterFillSpheres
 {
     public class Sphere
     {
@@ -36,7 +36,7 @@ namespace FillSpheres
         }
 
         // Get throw count
-        public int GetTimesThrown()
+        public int GetThrowCount()
         {
             return this.throwCount;
         }

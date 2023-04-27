@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FillSpheres
+namespace BetterFillSpheres
 {
     class Program
     {
@@ -19,12 +19,12 @@ namespace FillSpheres
 
             // Print state including color
             Console.WriteLine("Sphere 1: radius = " + sphere1.GetRadius() + 
-            ", throw count = " + sphere1.GetTimesThrown() + ", color = " + 
+            ", throw count = " + sphere1.GetThrowCount() + ", color = " + 
             sphere1.GetColor().GetRed() + ", " + sphere1.GetColor().GetGreen() + 
             ", " + sphere1.GetColor().GetBlue());
 
             Console.WriteLine("Sphere 2: radius = " + sphere2.GetRadius() +
-            ", throw count = " + sphere2.GetTimesThrown() + ", color = " +
+            ", throw count = " + sphere2.GetThrowCount() + ", color = " +
             sphere2.GetColor().GetRed() + ", " + sphere2.GetColor().GetGreen() +
             ", " + sphere2.GetColor().GetBlue());
         }
