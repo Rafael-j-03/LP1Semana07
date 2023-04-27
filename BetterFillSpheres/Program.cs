@@ -31,6 +31,10 @@ namespace BetterFillSpheres
                               sphere2.Radius + " | Sphere 2 times thrown: " +
                               sphere2.GetTimesThrown);
 
+            // Print name of color from spheres
+            Console.WriteLine("Sphere 1 color name: " + sphere1.Color.Name);
+            Console.WriteLine("Sphere 2 color name: " + sphere2.Color.Name);
+
             // Change color from sphere 1
             sphere1.Color = new Color{Red = 0, Green = 0, Blue = 255, Alpha = 255};
 
@@ -40,6 +44,10 @@ namespace BetterFillSpheres
                               ", " + sphere1.Color.Alpha + " | Sphere 1 radius: " +
                               sphere1.Radius + " | Sphere 1 times thrown: " +
                               sphere1.GetTimesThrown);
+
+            // Print name of color from sphere 1
+            Console.WriteLine("Sphere 1 color name: " + sphere1.Color.Name);
+
         }
     }
 }

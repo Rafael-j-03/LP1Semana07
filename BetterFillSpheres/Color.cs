@@ -15,5 +15,24 @@ namespace BetterFillSpheres
 
         // Get grey value
         public byte GetGrey { get => (byte)((Red + Green + Blue) / 3); }
+
+        // Get name of color 
+        public string Name
+        {
+            get
+            {
+                switch ((Red, Green, Blue))
+                {
+                    case (255, 0, 0):
+                        return "Red 100%";
+                    case (0, 255, 0):
+                        return "Green 100%";
+                    case (0, 0, 255):
+                        return "Blue 100%";
+                    default:
+                        return "Mixed";
+                }
+            }
+        }
     }
 }
