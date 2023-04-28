@@ -25,5 +25,7 @@ namespace JustScored
                 }
             }
         }
+
+        public string Name { get; }
     }
 }
