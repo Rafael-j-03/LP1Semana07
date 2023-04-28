@@ -27,5 +27,16 @@ namespace JustScored
         }
 
         public string Name { get; }
+
+        public float RateOfSuccess 
+        { 
+            get 
+            {
+                if (gamesPlayed == 0)
+                    return 0;
+                else
+                    return (float)gamesWon/gamesPlayed;
+            }
+        }
     }
 }
